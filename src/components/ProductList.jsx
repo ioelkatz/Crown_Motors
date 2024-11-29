@@ -88,22 +88,6 @@ function ProductList() {
                 Audi
               </span>
             </div>
-
-            {/*   Buscador */}
-
-            {/* <form className="d-flex">
-              <label hidden htmlFor="carSearcher">
-                hey
-              </label>
-              <input
-                className="form-control buscador-styles color-text-our-white border-end-0 rounded-0 rounded-start background-night"
-                name="carSearcher"
-                id="carSearcher"
-              />
-              <button className="button-search rounded-end px-3 border-start-0">
-                <i className="bi bi-search"></i>
-              </button>
-            </form> */}
           </div>
           {/* 2° categorias (max 568px) */}
           <div className="container py-4 d-block d-sm-none">

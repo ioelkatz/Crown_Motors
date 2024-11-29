@@ -827,7 +827,7 @@ html,
 .products-image {
   object-fit: cover;
   object-position: left;
-  height: 55vh !important;
+  height: 65vh !important;
   width: 100% !important;
   z-index: -1;
   border: none;
@@ -1472,6 +1472,9 @@ html,
   .column-brand-right-styles {
     padding: 0px !important;
   }
+  .products-image {
+    height: 50vh !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1563,6 +1566,9 @@ html,
   .paragraph-profile-styles {
     font-size: 15px;
   }
+  .products-image {
+    height: 45vh !important;
+  }
 }
 
 @media (max-width: 380px) {
@@ -1592,5 +1598,8 @@ html,
   }
   .font-subtitle-thankyou {
     font-size: 17px !important;
+  }
+  .products-image {
+    height: 40vh !important;
   }
 }
