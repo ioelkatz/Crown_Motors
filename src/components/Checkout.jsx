@@ -7,7 +7,6 @@ import { cleanCart } from "../../redux/cartSlice";
 import { toast } from "react-toastify";
 import { saveLastOrder } from "../../redux/orderSlice";
 
-
 function Checkout() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -64,6 +63,7 @@ function Checkout() {
       data: { address, cart, nanoId: nanoid() },
       headers: { authorization: `Bearer ${token}` },
     });
+    console.log(call.data);
     dispatch(saveLastOrder(call.data));
     dispatch(cleanCart([]));
     navigate("/thank-you");
@@ -73,9 +73,9 @@ function Checkout() {
     setAddress(e.target.value);
   };
 
-  const disableFunction = ()=>{
-    toast.info("This feature is in development.")
-  }
+  const disableFunction = () => {
+    toast.info("This feature is in development.");
+  };
 
   return (
     user && (
@@ -196,7 +196,7 @@ function Checkout() {
                       required
                       value={address}
                       onChange={handleAddress}
-                      type=""
+                      type="text"
                       className="form-control input-checkout-styles rounded-0"
                       name="address"
                       id="address"
@@ -220,7 +220,11 @@ function Checkout() {
                     <div className="d-block d-md-flex">
                       <div className="col-md-6">
                         <div className="mb-3 mb-md-0 me-md-2">
-                          <button type="button" onClick={disableFunction} className="button-checkout-pay-apple py-2 w-100 d-flex align-items-center justify-content-center text-center">
+                          <button
+                            type="button"
+                            onClick={disableFunction}
+                            className="button-checkout-pay-apple py-2 w-100 d-flex align-items-center justify-content-center text-center"
+                          >
                             <i className="bi bi-apple me-1"></i>
                             <p className="m-0 ms-1">Pay</p>
                           </button>
@@ -228,7 +232,11 @@ function Checkout() {
                       </div>
                       <div className="col-md-6">
                         <div className="ms-md-2">
-                          <button type="button" onClick={disableFunction} className="button-checkout-pay-google py-2 w-100 d-flex align-items-center justify-content-center text-center">
+                          <button
+                            type="button"
+                            onClick={disableFunction}
+                            className="button-checkout-pay-google py-2 w-100 d-flex align-items-center justify-content-center text-center"
+                          >
                             <i className="bi bi-google me-1"></i>
                             <p className="m-0 ms-1">Pay</p>
                           </button>
@@ -362,7 +370,11 @@ function Checkout() {
                       <div className="d-flex">
                         <div className="col-6">
                           <div className="me-2">
-                            <button type="button" onClick={disableFunction} className="button-checkout-pay-apple py-2 w-100 d-flex align-items-center justify-content-center text-center">
+                            <button
+                              type="button"
+                              onClick={disableFunction}
+                              className="button-checkout-pay-apple py-2 w-100 d-flex align-items-center justify-content-center text-center"
+                            >
                               <i className="bi bi-apple me-1"></i>
                               <p className="m-0 ms-1">Pay</p>
                             </button>
@@ -370,7 +382,11 @@ function Checkout() {
                         </div>
                         <div className="col-6">
                           <div className="ms-2">
-                            <button type="button" onClick={disableFunction} className="button-checkout-pay-google py-2 w-100 d-flex align-items-center justify-content-center text-center">
+                            <button
+                              type="button"
+                              onClick={disableFunction}
+                              className="button-checkout-pay-google py-2 w-100 d-flex align-items-center justify-content-center text-center"
+                            >
                               <i className="bi bi-google me-1"></i>
                               <p className="m-0 ms-1">Pay</p>
                             </button>

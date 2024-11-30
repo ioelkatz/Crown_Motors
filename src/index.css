@@ -110,6 +110,10 @@ html,
   margin: 0px 20px;
 }
 
+.navbar-width {
+  max-width: 20%;
+}
+
 .custom-offcanvas .btn-close {
   filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
@@ -180,6 +184,13 @@ html,
   }
 }
 
+.subtotal-div-cart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*  width: 29.2%; */
+}
+
 .button-no-modal {
   border: 2px solid var(--gold);
   background: var(--night);
@@ -234,11 +245,6 @@ html,
   background: var(--night);
   color: var(--offWhite);
   transition: 0.4s all ease-in-out;
-}
-
-.navbar-styles {
-  width: 100vw;
-  /*  background: var(--nightTransparency2); */
 }
 
 .scroll-navbar {
@@ -944,6 +950,12 @@ html,
   padding: 48px;
 }
 
+.scroll-table {
+  overflow: scroll;
+  max-height: 80vh;
+  scroll-behavior: smooth;
+}
+
 .text-invalid-credentials {
   color: rgb(255, 55, 55) !important;
 }
@@ -1052,6 +1064,10 @@ html,
 }
 
 @media (max-width: 1200px) {
+  .navbar-width {
+    max-width: 25%;
+  }
+
   .image-logo-styles {
     height: 300px !important;
   }
@@ -1191,6 +1207,16 @@ html,
   .button-error-page {
     width: 159px;
   }
+  .navbar-width {
+    max-width: 30%;
+  }
+  .link-active {
+    font-size: 19px;
+  }
+
+  .link-inactive {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1280,7 +1306,16 @@ html,
   .image-thankyou-page {
     height: 200px !important;
   }
+  .navbar-width {
+    max-width: 35%;
+  }
+  .link-active {
+    font-size: 18px;
+  }
 
+  .link-inactive {
+    font-size: 18px;
+  }
   .div-content-checkout {
     display: flex;
     align-items: center;
@@ -1385,6 +1420,9 @@ html,
     right: 0;
     border-radius: 0px !important;
     background-color: var(--night) !important;
+  }
+  .navbar-width {
+    max-width: 45%;
   }
   .form-styles {
     width: 85% !important;
@@ -1523,6 +1561,9 @@ html,
   .subtitle-home {
     font-size: 19px;
   }
+  .navbar-width {
+    max-width: 50%;
+  }
   .image-carousel-styles {
     height: 210px !important;
   }
@@ -1552,7 +1593,7 @@ html,
     padding: 40px !important;
   }
   .offcanvas-cart-styles {
-    width: 80% !important;
+    width: 75% !important;
   }
   .button-error-page {
     width: 148.5px;
@@ -1593,13 +1634,13 @@ html,
   .p-saira-styles {
     font-size: 14px;
   }
-  .offcanvas-cart-styles {
-    width: 85% !important;
-  }
   .font-subtitle-thankyou {
     font-size: 17px !important;
   }
   .products-image {
     height: 40vh !important;
+  }
+  .navbar-width {
+    max-width: 55%;
   }
 }

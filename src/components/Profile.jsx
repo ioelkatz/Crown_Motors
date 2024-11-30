@@ -150,44 +150,46 @@ function Profile() {
                       After you make an order, it will appear in this section.
                     </p>
                   ) : (
-                    <Table className="min-h-100" bordered hover variant="dark">
-                      <thead>
-                        <tr>
-                          <th>Code</th>
-                          <th>Status</th>
-                          <th>Address</th>
-                          <th>List</th>
-                          <th>Total</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {orders
-                          ?.filter((order) => order.userId === user.id)
-                          .map((order) => (
-                            <tr key={order?.id}>
-                              <td>
-                                <div className="order-col">{order?.nanoId}</div>
-                              </td>
-                              <td>{order?.status}</td>
-                              <td>{order?.address}</td>
-                              <td>
-                                {order?.productList?.map((car) =>
-                                  car?.qty < 2 ? (
-                                    <li key={car?.nanoId}>
-                                      {car?.brand?.name} {car?.model} - {car?.qty} unit
-                                    </li>
-                                  ) : (
-                                    <li key={car?.nanoId}>
-                                      {car?.brand?.name} {car?.model} - {car?.qty} units
-                                    </li>
-                                  ),
-                                )}
-                              </td>
-                              <td>${formatNumber(totalPurchase(order), 0)} </td>
-                            </tr>
-                          ))}
-                      </tbody>
-                    </Table>
+                    <div className="scroll-table">
+                      <Table className="" bordered hover variant="dark">
+                        <thead>
+                          <tr>
+                            <th>Code</th>
+                            <th>Status</th>
+                            <th>Address</th>
+                            <th>List</th>
+                            <th>Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {orders
+                            ?.filter((order) => order.userId === user.id)
+                            .map((order) => (
+                              <tr key={order?.id}>
+                                <td>
+                                  <div className="order-col">{order?.nanoId}</div>
+                                </td>
+                                <td>{order?.status}</td>
+                                <td>{order?.address}</td>
+                                <td>
+                                  {order?.productList?.map((car) =>
+                                    car?.qty < 2 ? (
+                                      <li key={car?.nanoId}>
+                                        {car?.brand?.name} {car?.model} - {car?.qty} unit
+                                      </li>
+                                    ) : (
+                                      <li key={car?.nanoId}>
+                                        {car?.brand?.name} {car?.model} - {car?.qty} units
+                                      </li>
+                                    ),
+                                  )}
+                                </td>
+                                <td>${formatNumber(totalPurchase(order), 0)} </td>
+                              </tr>
+                            ))}
+                        </tbody>
+                      </Table>
+                    </div>
                   )}
                 </div>
               </div>

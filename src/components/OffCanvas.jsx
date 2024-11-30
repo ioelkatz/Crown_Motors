@@ -101,8 +101,9 @@ function OffCanvas({ name, ...props }) {
             {cart.length === 0 ? (
               ""
             ) : (
-              <div className="color-text-our-white background-night p-3  mt-auto">
-                <hr />
+             /*  Subtotal */
+              <div className="color-text-our-white background-night subtotal-div-cart p-3 pt-0  mt-auto">
+                <hr className="m-0 my-2"/>
                 <div className="saira d-flex justify-content-between">
                   <span>Subtotal:</span>
                   <span className="fw-medium saira">${formatNumber(subtotal, 0)}</span>

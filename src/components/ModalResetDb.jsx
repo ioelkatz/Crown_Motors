@@ -21,7 +21,6 @@ function ModalResetDB() {
       method: "GET",
       url: `${import.meta.env.VITE_API_URL}/resetdb`,
     });
-    console.log(call);
     if (!call.data.error) {
       setIsLoading(false);
       hideModal();

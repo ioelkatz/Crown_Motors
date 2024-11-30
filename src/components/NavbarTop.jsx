@@ -50,7 +50,7 @@ function NavbarTop() {
   return (
     <>
       <Navbar expand="true" id="navbar1" className="fixed-top shadow navbar-styles">
-        <Container>
+        <Container className="">
           <Navbar.Toggle
             onClick={() => setShowOffCanvas(!showOffCanvas)}
             className="prueba2"
@@ -60,7 +60,7 @@ function NavbarTop() {
           <Navbar.Offcanvas
             onHide={() => setShowOffCanvas(false)}
             show={showOffCanvas}
-            className="background-night custom-offcanvas"
+            className="background-night navbar-width custom-offcanvas"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="start"
@@ -69,7 +69,7 @@ function NavbarTop() {
               <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className="p-0">
-              <Nav className="saira color-text-our-white d-flex h-100 w-100 justify-content-between align-items-center">
+              <Nav className="saira color-text-our-white d-flex h-100 justify-content-between align-items-center">
                 <div className="w-100">
                   <NavLink
                     onClick={() => setShowOffCanvas(false)}
