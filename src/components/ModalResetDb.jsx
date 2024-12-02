@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleWelcomeModal } from "../../redux/pageSlice";
 import { Spinner } from "react-bootstrap";
 import { toast } from "react-toastify";
+import { logout } from "../../redux/tokenSlice";
 
 function ModalResetDB() {
   const modal = useSelector((state) => state.page.showWelcomeModal);
@@ -24,6 +25,7 @@ function ModalResetDB() {
     if (!call.data.error) {
       setIsLoading(false);
       hideModal();
+      dispatch(logout(""));
       toast.success(call.data.msg);
     } else {
       setIsLoading(false);

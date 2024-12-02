@@ -3,7 +3,6 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import React from "react";
 import "../index.css";
-import BigCarousel from "./PhotoCarousel.jsx";
 import { useEffect } from "react";
 import axios from "axios";
 import { getAllProducts } from "../../redux/productSlice.js";
@@ -11,8 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import ModalResetDB from "./ModalResetDb.jsx";
-
-//help marcas? carrito?
+import PhotoCarousel from "./PhotoCarousel.jsx";
 
 function Home() {
   const dispatch = useDispatch();
@@ -36,7 +34,7 @@ function Home() {
     products && (
       <>
         {/* imagen principal */}
-        <BigCarousel />
+        <PhotoCarousel />
         {/* old new */}
         <div className="background-night pt-5">
           <div className="container">

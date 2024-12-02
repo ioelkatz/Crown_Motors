@@ -60,7 +60,7 @@ function Product() {
       {/*  imagen principal del producto */}
       <div className="gradient-main-home-styles">
         <img
-          className="img-fluid w-100 main-image-home"
+          className="img-fluid w-100 main-image-product"
           src={`${import.meta.env.VITE_SUPABASE_BACKET_URL}/img/${product?.image}`}
           alt="image 1"
         />
