@@ -8,7 +8,7 @@ function PhotoCarousel() {
           <img className="img-fluid w-100 main-image-home" src="super-lambo.png" alt="image 1" />
         </div>
         <Carousel.Caption>
-          <div className="title-background border py-3 text-center position-absolute">
+          <div className="title-background py-3 text-center position-absolute">
             <h3 className="saira-expanded-bold">Discover Lambo</h3>
             <p>The finest selection of engines</p>
           </div>
