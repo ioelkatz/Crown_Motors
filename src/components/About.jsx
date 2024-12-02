@@ -68,13 +68,13 @@ function About() {
                     >
                       <i className="bi bi-github me-1 fs-5"></i>
                     </a>
-                    <a
+                    {/* <a
                       className="link-icon-linkedin color-text-our-white"
                       target="_blank"
                       href="https://www.friv.com/"
                     >
                       <i className="bi bi-linkedin ms-1 fs-5 "></i>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ function About() {
         </div>
       </div>
 
-      {/* About the project */}
+      {/* About this project */}
       <div className="saira background-offwhite py-5">
         <div className="container color-text-night">
           <div className="mb-5 d-flex align-items-center justify-content-center">
@@ -120,32 +120,41 @@ function About() {
           </div>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-left-styles">
                 <div>
                   <img
                     login
-                    className="img-fluid mb-4"
+                    className="img-fluid mb-4 mb-lg-0"
                     src="image2.png"
                     alt="team workers poster"
                   />
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-right-styles">
                 <div className="text-start">
                   <p className="">
-                    This project was the last practical exercise made by our team during a
-                    three-month Web Development Bootcamp at Hack Academy. The Bootcamp has an
-                    immersive, full time program, in which students invest more than 600 hours.
+                    As the culmination of our three-month, full-time Web Development Immersive
+                    Course at Hack Academy, this project represents{" "}
+                    <span className="fw-medium">
+                      over 600 hours of intensive training and hands-on experience.
+                    </span>
                   </p>
                   <p className="">
-                    A challenge arrived and we as a team accept it. A complete E-commerce site of
-                    our preference was to be developed in under three weeks. With sweat, tears and
-                    effort we succeed and the results are in your screen.
+                    We were challenged to{" "}
+                    <span className="fw-medium">
+                      build a complete e-commerce site tailored to our specific needs in less than
+                      three weeks.
+                    </span>{" "}
+                    Through hard work and dedication, we delivered. The fruits of our labor are now
+                    visible on your screen.
                   </p>
                   <p className="">
-                    Last but not least, we harness essential tools such as MySQL, React and Node.js
-                    which enabled us to integrate the front with the back-end so as to fully
-                    complete the application in record time.
+                    Last but not least, we harness essential{" "}
+                    <span className="fw-medium">
+                      tools such as MySQL, React and Node.js which enabled us to integrate the
+                      frontend with the backend
+                    </span>{" "}
+                    so as to fully complete the application in record time.
                   </p>
                 </div>
               </div>
@@ -168,7 +177,7 @@ function About() {
                   <span className="line background-gold"></span>
                 </div>
                 <div className="container-fluid ">
-                  <div className="row g-5">
+                  <div className="row g-5 p-0">
                     <div className="col-3 text-center">
                       <img className="tools-about-styles img-fluid" src="js.png" alt="JS" />
                     </div>
@@ -211,11 +220,7 @@ function About() {
                       />
                     </div>
                     <div className="col-3 text-center">
-                      <img
-                        className=" tools-express img-fluid"
-                        src="express.png"
-                        alt="Express"
-                      />
+                      <img className=" tools-express img-fluid" src="express.png" alt="Express" />
                     </div>
                   </div>
                 </div>
@@ -238,16 +243,16 @@ function About() {
                       </p>
 
                       <div className="">
-                        <div className="d-flex align-items-center color-div-big-style">
-                          <div className="color-div-style background-offwhite shadow"></div>
+                        <div className="d-flex p-0 m-0 align-items-center">
+                          <div className="color-div-style background-offwhite"></div>
                           <p className="ms-2 m-0 p-saira-styles">#faf2e9</p>
                         </div>
-                        <div className="d-flex align-items-center color-div-big-style">
-                          <div className="color-div-style background-gold  shadow"></div>
+                        <div className="d-flex align-items-center">
+                          <div className="color-div-style background-gold"></div>
                           <p className="ms-2 m-0 p-saira-styles">#d3a55c</p>
                         </div>
-                        <div className="d-flex align-items-center color-div-big-style">
-                          <div className="color-div-style background-night  shadow"></div>
+                        <div className="d-flex align-items-center">
+                          <div className="color-div-style background-night"></div>
                           <p className="ms-2 m-0 p-saira-styles">#0c090d</p>
                         </div>
                       </div>

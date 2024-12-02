@@ -32,7 +32,7 @@ function Checkout() {
     const deliveryDate = new Date(currentDate);
     deliveryDate.setDate(currentDate.getDate() + 7);
 
-    const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+    const options = { year: "numeric", month: "long", day: "numeric" };
     return deliveryDate.toLocaleDateString(undefined, options);
   };
 
@@ -262,7 +262,7 @@ function Checkout() {
                         {/*  car info (min 768px) */}
                         <div className="d-none d-md-block">
                           <img
-                            className="img-fluid img-checkout-product me-md-2"
+                            className="img-checkout-product me-md-2"
                             src={`${import.meta.env.VITE_SUPABASE_BACKET_URL}/img/${car.image}`}
                             alt="image poster"
                           />
@@ -286,13 +286,13 @@ function Checkout() {
                         {/* car info (max 768px) */}
                         <div className="d-md-none">
                           <img
-                            className="img-fluid img-checkout-product me-md-2"
+                            className="img-checkout-product me-md-2"
                             src={`${import.meta.env.VITE_API_URL}/img/${car.image}`}
                             alt="image poster"
                           />
                         </div>
-                        <div className="ms-xl-2 ms-2 d-md-none ms-sm-3">
-                          <p className="saira fw-medium font-brand-model pe-2 mb-1 mb-sm-0">
+                        <div className="ms-xl-2 ms-1 d-md-none ms-sm-3">
+                          <p className="saira fw-medium font-brand-model pe-0 pe-sm-2 mb-1 mb-sm-0">
                             {car.brand.name} {car.model}
                           </p>
                           <div className="d-flex div-info-product align-items-end pe-2">
