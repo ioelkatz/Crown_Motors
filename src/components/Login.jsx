@@ -114,7 +114,7 @@ function Login() {
               </button>
             </form>
 
-            <div className="d-flex justify-content-center mb-3">
+            <div className="d-flex justify-content-center mb-2">
               <span className="me-1">Don't have an account?</span>{" "}
               <Link className="color-text-gold text-decoration-none ms-1" to="/signup">
                 Sign up
