@@ -1427,7 +1427,7 @@ html,
   .main-image-product {
     height: 70vh !important;
   }
-   .button-error-page {
+  .button-error-page {
     width: 156px;
   }
 }
@@ -1652,6 +1652,9 @@ html,
 }
 
 @media (max-width: 380px) {
+  .paragraph-signup-styles {
+    font-size: 15px;
+  }
   .subtitle-home {
     font-size: 17px;
   }

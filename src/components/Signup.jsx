@@ -61,7 +61,7 @@ function Signup() {
             </div>
             <div className="form-styles">
               <h2 className="text-center fw-bold">Sign Up</h2>
-              <p className="mb-3">Complete your details to create your Crown Motors Account</p>
+              <p className="mb-3 paragraph-signup-styles">Complete your details to create your Crown Motors Account</p>
               <form onSubmit={handleSignIn} method="POST" className=" w-sm-100">
                 <label hidden className="mb-2" htmlFor="email">
                   First Name
