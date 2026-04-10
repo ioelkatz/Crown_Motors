@@ -13,9 +13,6 @@ import ModalResetDB from "./ModalResetDb.jsx";
 import PhotoCarousel from "./PhotoCarousel.jsx";
 
 function Home() {
-  console.log("SUPABASE URL:", import.meta.env.VITE_SUPABASE_URL);
-  console.log("SUPABASE KEY exists:", !!import.meta.env.VITE_SUPABASE_ANON_KEY);
-
   const dispatch = useDispatch();
   const products = useSelector((state) => state.product);
   useEffect(() => {
