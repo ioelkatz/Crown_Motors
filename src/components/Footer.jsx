@@ -57,7 +57,7 @@ const disableFunction = ()=>{
               </InputGroup>
               <hr className="my-3" />
               <div className="d-flex justify-content-between">
-                <p className="text-secondary">Copyright @ 2026 Crown Motors</p>
+                <p className="text-secondary">Copyright @ 2024 Crown Motors</p>
                 <div className="d-flex">
                   <i onClick={disableFunction} className="bi bi-instagram me-1 cursor-pointer"></i>
                   <i onClick={disableFunction} className="bi bi-facebook mx-1 cursor-pointer"></i>
