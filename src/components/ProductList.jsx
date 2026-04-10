@@ -15,13 +15,13 @@ function ProductList() {
   const timeQuery = searchParams.get("time");
 
   const handleBrandFilter = (id) => {
-    if (!products) return;
+    if (!Array.isArray(products)) return;
     const filtrado = products.filter((car) => car.brandId === id);
     setBrand(filtrado);
   };
 
   const handleTime = () => {
-    if (!products) return;
+    if (!Array.isArray(products)) return;
     if (timeQuery === "vintage") {
       const filterTime = products.filter((car) => car.year < 2000);
       setBrand(filterTime);
@@ -33,7 +33,7 @@ function ProductList() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      if (!products) {
+      if (!Array.isArray(products)) {
         const call = await axios({ method: "GET", url: `${import.meta.env.VITE_API_URL}/products` });
         dispatch(getAllProducts(call.data));
       }
@@ -42,7 +42,7 @@ function ProductList() {
   }, []);
 
   useEffect(() => {
-    if (!products) return;
+    if (!Array.isArray(products)) return;
     if (brandQueryId) {
       handleBrandFilter(Number(brandQueryId));
     } else if (timeQuery) {
