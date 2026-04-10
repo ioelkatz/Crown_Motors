@@ -8,7 +8,7 @@ function ThankYou() {
     <>
       <div className="background-night saira vh-100 d-flex justify-content-center align-items-center">
         <div className="main-div-thankyou d-flex flex-column align-items-center justify-content-center px-4 p-md-4 text-center">
-          <img className="img-fluid logo-thankyou" src="crown-motors.png" alt="crown motors logo" />
+          <img className="img-fluid logo-thankyou" src="crown-motors.webp" alt="crown motors logo" />
           <h1 className="saira-expanded-more-bold">Thank You!</h1>
           <p className="saira-bold font-subtitle-thankyou mb-4">
             Your order was received successfully
@@ -20,7 +20,7 @@ function ThankYou() {
                 <div className="">
                   <img
                     className="img-fluid image-thankyou-page"
-                    src="yellow-car.png"
+                    src="yellow-car.webp"
                     alt="cars order"
                   />
                 </div>

@@ -57,7 +57,7 @@ function Login() {
             <div className="mb-4">
               <img
                 className="img-fluid logo-login-styles"
-                src="/crown-logo.png"
+                src="/crown-logo.webp"
                 alt="logo crown motors"
               />
             </div>

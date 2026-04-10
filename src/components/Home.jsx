@@ -61,7 +61,7 @@ function Home() {
                   <div className="d-flex justify-content-center align-items-center position-relative">
                     <img
                       className="img-fluid mb-4 mb-md-0 image-logo-styles cursor-pointer"
-                      src="/yellow-car.png"
+                      src="/yellow-car.webp"
                       alt="futuristic car poster"
                     />
                   </div>
@@ -205,7 +205,7 @@ function Home() {
                   <Link to="/products?brand=2">
                     <img
                       className="img-fluid image-car-logo-style"
-                      src="/porsche_logo.png"
+                      src="/porsche_logo.webp"
                       alt="brand icon"
                     />
                   </Link>
@@ -215,7 +215,7 @@ function Home() {
                 <Link to="/products?brand=1">
                   <img
                     className="img-fluid image-car-logo-style"
-                    src="/mclaren-logo.png"
+                    src="/mclaren-logo.webp"
                     alt="brand icon"
                   />
                 </Link>
@@ -225,7 +225,7 @@ function Home() {
                   <Link to="/products?brand=5">
                     <img
                       className="img-fluid image-car-logo-style"
-                      src="/lambo-logo.png"
+                      src="/lambo-logo.webp"
                       alt="brand icon"
                     />
                   </Link>
@@ -236,7 +236,7 @@ function Home() {
                   <Link to="/products?brand=4">
                     <img
                       className=" img-fluid image-car-logo-style"
-                      src="/rolls-royce-logo2.png"
+                      src="/rolls-royce-logo2.webp"
                       alt="brand icon"
                     />
                   </Link>
@@ -246,7 +246,7 @@ function Home() {
                 <Link to="/products?brand=3">
                   <img
                     className="img-fluid image-car-logo-style"
-                    src="/ferrari-logo2.png"
+                    src="/ferrari-logo2.webp"
                     alt="brand icon"
                   />
                 </Link>
@@ -256,7 +256,7 @@ function Home() {
                   <Link to="/products?brand=6">
                     <img
                       className="img-fluid image-car-logo-style"
-                      src="/audi-logo2.png"
+                      src="/audi-logo2.webp"
                       alt="brand icon"
                     />
                   </Link>

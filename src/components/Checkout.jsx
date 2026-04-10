@@ -84,7 +84,7 @@ function Checkout() {
         <div className="position-relative d-flex">
           <img
             className="img-fluid w-100 img-checkout-styles d-none d-md-block"
-            src="keys.png"
+            src="keys.webp"
             alt="image 1"
           />
           {/* div del checkout */}

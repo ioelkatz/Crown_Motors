@@ -6,7 +6,7 @@ import OffCanvas from "./OffCanvas";
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import crownLogo from "../../public/crown-logo.png";
+import crownLogo from "../../public/crown-logo.webp";
 import { useSelector, useDispatch } from "react-redux";
 import Modal from "react-bootstrap/Modal";
 import { logout } from "../../redux/tokenSlice";

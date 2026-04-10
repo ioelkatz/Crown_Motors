@@ -40,7 +40,7 @@ function ChangePassword() {
       <div className="position-relative">
         <img
           className="img-fluid w-100 img-emailcheck-styles d-none d-sm-block"
-          src="imageresetpassword.png"
+          src="imageresetpassword.webp"
           alt="image 1"
         />
         <form

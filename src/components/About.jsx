@@ -6,7 +6,7 @@ function About() {
       <div className="position-relative">
         <img
           className="img-about-styles img-fluid w-100 vh-100"
-          src="image1.png"
+          src="image1.webp"
           alt="people working happily"
         />
         <div className="text-center position-absolute title-about-styles">
@@ -28,7 +28,7 @@ function About() {
                 <div className="text-center mb-4">
                   <img
                     className="pfp-about-styles img-fluid shadow"
-                    src="fran.png"
+                    src="fran.webp"
                     alt="member 1"
                   />
                   <p className="saira-expanded-more-bold fs-5 m-0 mb-1">Francisco Ortiz</p>
@@ -55,7 +55,7 @@ function About() {
                 <div className="text-center mb-4">
                   <img
                     className="pfp-about-styles img-fluid shadow"
-                    src="clara.png"
+                    src="clara.webp"
                     alt="member 1"
                   />
                   <p className="saira-expanded-more-bold fs-5 m-0 mb-1">María Clara Puñales</p>
@@ -82,7 +82,7 @@ function About() {
                 <div className="text-center">
                   <img
                     className="img-fluid pfp-about-styles shadow"
-                    src="ioel.png"
+                    src="ioel.webp"
                     alt="member 1"
                   />
                   <p className="saira-expanded-more-bold fs-5 m-0 mb-1">Ioel Katz</p>
@@ -125,7 +125,7 @@ function About() {
                   <img
                     login
                     className="img-fluid mb-4 mb-lg-0"
-                    src="image2.png"
+                    src="image2.webp"
                     alt="team workers poster"
                   />
                 </div>
@@ -179,48 +179,48 @@ function About() {
                 <div className="container-fluid ">
                   <div className="row g-5 p-0">
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="js.png" alt="JS" />
+                      <img className="tools-about-styles img-fluid" src="js.webp" alt="JS" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="github.png" alt="GitHub" />
+                      <img className="tools-about-styles img-fluid" src="github.webp" alt="GitHub" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="nodejs.png" alt="NodeJS" />
+                      <img className="tools-about-styles img-fluid" src="nodejs.webp" alt="NodeJS" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="redux.png" alt="Redux" />
+                      <img className="tools-about-styles img-fluid" src="redux.webp" alt="Redux" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="react.png" alt="React" />
+                      <img className="tools-about-styles img-fluid" src="react.webp" alt="React" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="html.png" alt="HTML" />
+                      <img className="tools-about-styles img-fluid" src="html.webp" alt="HTML" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="vite.png" alt="Vite" />
+                      <img className="tools-about-styles img-fluid" src="vite.webp" alt="Vite" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="mysql.png" alt="MySql" />
+                      <img className="tools-about-styles img-fluid" src="mysql.webp" alt="MySql" />
                     </div>
                     <div className="col-3 text-center">
-                      <img className="tools-about-styles img-fluid" src="css.png" alt="CSS" />
+                      <img className="tools-about-styles img-fluid" src="css.webp" alt="CSS" />
                     </div>
                     <div className="col-3 text-center">
                       <img
                         className="tools-about-styles img-fluid"
-                        src="excalidraw.png"
+                        src="excalidraw.webp"
                         alt="Excalidraw"
                       />
                     </div>
                     <div className="col-3 text-center">
                       <img
                         className="tools-about-styles img-fluid"
-                        src="sequalize.png"
+                        src="sequalize.webp"
                         alt="Sequelize"
                       />
                     </div>
                     <div className="col-3 text-center">
-                      <img className=" tools-express img-fluid" src="express.png" alt="Express" />
+                      <img className=" tools-express img-fluid" src="express.webp" alt="Express" />
                     </div>
                   </div>
                 </div>

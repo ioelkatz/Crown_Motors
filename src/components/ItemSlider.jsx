@@ -54,7 +54,7 @@ export default ItemsSlider;
             </div>
             <div className="col-3">
               <div className="card color-text-our-white">
-                <img src="lambo-2.png" className="img-fluid " alt="" />
+                <img src="lambo-2.webp" className="img-fluid " alt="" />
                 <div className="card-img-overlay d-flex align-items-end justify-content-center">
                   <h5 className="card-title ">Card title</h5>
                 </div>
@@ -86,7 +86,7 @@ export default ItemsSlider;
             </div>
             <div className="col-3">
               <div className=" border card m-3">
-                <img src="volante.png" className="img-fluid" alt="" />
+                <img src="volante.webp" className="img-fluid" alt="" />
                 <div className="card-img-overlay d-flex align-items-end justify-content-center">
                   <h5 className="card-title ">Card title</h5>
                 </div>

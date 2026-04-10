@@ -75,7 +75,7 @@ function ProductList() {
         <div className="gradient-main-home-style">
           <img
             className="img-fluid w-100 img-products-styles"
-            src="cool-cars-pictures-sscfk7uv8d48q5uv.png"
+            src="cool-cars-pictures-sscfk7uv8d48q5uv.webp"
             alt="image 1"
           />
         </div>

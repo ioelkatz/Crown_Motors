@@ -55,7 +55,7 @@ function Signup() {
             <div className="mb-1">
               <img
                 className="img-fluid logo-login-styles"
-                src="/crown-logo.png"
+                src="/crown-logo.webp"
                 alt="logo crown motors"
               />
             </div>

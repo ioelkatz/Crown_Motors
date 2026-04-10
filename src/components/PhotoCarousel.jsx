@@ -16,7 +16,7 @@ function PhotoCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <div className="gradient-main-home-styles">
-          <img className="img-fluid w-100 main-image-home" src="porsche-car.png" alt="image 2" />
+          <img className="img-fluid w-100 main-image-home" src="porsche-car.webp" alt="image 2" />
         </div>
         <Carousel.Caption>
           <div className="title-background py-3 text-center position-absolute">
@@ -27,7 +27,7 @@ function PhotoCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <div className="gradient-main-home-styles">
-          <img className="img-fluid w-100 main-image-home" src="ferrari-car.png" alt="image 1" />
+          <img className="img-fluid w-100 main-image-home" src="ferrari-car.webp" alt="image 1" />
         </div>
         <Carousel.Caption>
           <div className="title-background py-3 text-center position-absolute">
