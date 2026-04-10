@@ -118,9 +118,10 @@ function Home() {
                 centerMode={true}
                 centerSlidePercentage={70}
               >
-                {products
-                  ?.filter((product) => product.featured == true)
-                  ?.map((car) => (
+                {Array.isArray(products) &&
+                  products
+                    .filter((product) => product.featured == true)
+                    .map((car) => (
                     <Link to={`/product/${car.id}`} key={car.id}>
                       <div className="div-image-carousel">
                         <img

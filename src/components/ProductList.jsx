@@ -33,9 +33,11 @@ function ProductList() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      if (!Array.isArray(products)) {
+      try {
         const call = await axios({ method: "GET", url: `${import.meta.env.VITE_API_URL}/products` });
         dispatch(getAllProducts(call.data));
+      } catch (err) {
+        console.error("Failed to fetch products:", err);
       }
     };
     fetchProducts();
