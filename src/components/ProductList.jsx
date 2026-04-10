@@ -1,22 +1,27 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link, useSearchParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import axios from "axios";
+import { getAllProducts } from "../../redux/productSlice.js";
 
 function ProductList() {
+  const dispatch = useDispatch();
   const products = useSelector((state) => state.product);
 
-  const [brand, setBrand] = useState(products);
+  const [brand, setBrand] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
 
   const brandQueryId = searchParams.get("brand");
   const timeQuery = searchParams.get("time");
 
   const handleBrandFilter = (id) => {
+    if (!products) return;
     const filtrado = products.filter((car) => car.brandId === id);
     setBrand(filtrado);
   };
 
   const handleTime = () => {
+    if (!products) return;
     if (timeQuery === "vintage") {
       const filterTime = products.filter((car) => car.year < 2000);
       setBrand(filterTime);
@@ -27,12 +32,25 @@ function ProductList() {
   };
 
   useEffect(() => {
+    const fetchProducts = async () => {
+      if (!products) {
+        const call = await axios({ method: "GET", url: `${import.meta.env.VITE_API_URL}/products` });
+        dispatch(getAllProducts(call.data));
+      }
+    };
+    fetchProducts();
+  }, []);
+
+  useEffect(() => {
+    if (!products) return;
     if (brandQueryId) {
       handleBrandFilter(Number(brandQueryId));
     } else if (timeQuery) {
       handleTime();
+    } else {
+      setBrand(products);
     }
-  }, []);
+  }, [products]);
 
   const formatNumber = (num, fixed) => {
     const array = Math.floor(num).toString().split("");
@@ -134,7 +152,7 @@ function ProductList() {
         <div className="pb-5 background-night color-text-our-white saira">
           <div className="container overflow-hidden">
             <div className="row gx-4 gy-5">
-              {brand.map((car) => (
+              {brand?.map((car) => (
                 <div key={car.id} className="col-lg-6 text-center">
                   <div className="overflow-hidden shadow">
                     <Link to={`/product/${car.id}`}>
